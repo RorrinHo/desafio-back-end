@@ -3,8 +3,8 @@ const router = express.Router();
 
 const gateway = require('../controllers/catalogoController');
 
-router.get('/', gateway.obtenerCatalogo);
+router.get('/', cors(), gateway.obtenerCatalogo);
 
-router.get('/:sku', gateway.obtenerProducto);
+router.get('/:sku', cors(), gateway.obtenerProducto);
 
 module.exports = router;
