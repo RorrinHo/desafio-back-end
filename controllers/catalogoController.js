@@ -1,6 +1,7 @@
 const CatalogoService  = require('../services/catalogoService')
 
 exports.obtenerCatalogo = async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
   try {
     const productos = await CatalogoService.buscarCatalogo();
 
@@ -12,6 +13,7 @@ exports.obtenerCatalogo = async (req, res) => {
 };
 
 exports.obtenerProducto = async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
   try {
     const sku = req.params.sku;
     const producto = await CatalogoService.buscarProducto(sku);
