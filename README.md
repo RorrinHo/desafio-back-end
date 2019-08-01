@@ -20,7 +20,7 @@ Abrir [http://localhost:8181](http://localhost:8181) en el navegador.
 
 Descargar redis:
 
-### `https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip`
+Abrir [https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip](https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip) en el navegador.
 
 Descomprimir y agregar variable de entorno a la raiz de redis 
 
