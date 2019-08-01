@@ -23,10 +23,10 @@ exports.buscarProducto = async (sku) => {
 
 const hacerPeticion = async (sku) => {
   const options = {
-    url: process.env.REDIS_URL
+    url: process.env.REDISTOGO_URL
   };
 
-  const client = (process.env.REDIS_URL) ? redis.createClient(options) : redis.createClient();
+  const client = (process.env.REDISTOGO_URL) ? redis.createClient(options) : redis.createClient();
 
   try {
     if (getRandomInt(0, 99) < 10) {
